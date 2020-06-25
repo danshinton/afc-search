@@ -1,0 +1,11 @@
+version: '3.5'
+
+services:
+  afc-search:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: afc-search
+    container_name: afc-search
+    ports:
+      - "80:80"

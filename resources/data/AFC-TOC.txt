@@ -1,0 +1,304 @@
+1|1|1|God is the Supreme Being|5|Who is God?
+2|1|1|God is the Supreme Being|6|Who made God?
+3|1|1|God is the Supreme Being|7|Can there be more than one God?
+4|1|1|God is the Supreme Being|8|Why must there be a God?
+5|1|1|God is the Supreme Being|9|Why is God an infinitely perfect being?
+6|1|2|God’s Perfections|11|What are God’s perfections?
+7|1|2|God’s Perfections|12|Is God infinitely good?
+8|1|2|God’s Perfections|13|Is God eternal?
+9|1|2|God’s Perfections|14|Why is God all-knowing?
+10|1|2|God’s Perfections|16|Is God present everywhere?
+11|1|2|God’s Perfections|16|Is God almighty?
+12|1|3|More of God’s Perfections|19|Is God all-wise?
+13|1|3|More of God’s Perfections|20|Why is God all-holy?
+14|1|3|More of God’s Perfections|21|Why is God all-merciful?
+15|1|3|More of God’s Perfections|22|Why is God all-just?
+16|1|4|Worship of God|25|In what ways has God shown His love for us?
+17|1|4|Worship of God|28|How should we respond to God’s goodness?
+18|1|4|Worship of God|29|In what ways do we worship God?
+19|1|4|Worship of God|32|What should we hope to receive from the goodness of God?
+20|1|4|Worship of God|33|Why is it that so few people pay attention to God?
+21|1|4|Worship of God|35|Does every man have some desire for God?
+22|1|5|God Reveals Himself|43|What is the history of salvation?
+23|1|5|God Reveals Himself|45|How did God deal with mankind?
+24|1|5|God Reveals Himself|47|How did God choose to show Himself to the people of the Old Testament?
+25|1|6|The Mystery of the Holy Trinity|53|What is the mystery of the Holy Trinity?
+26|1|6|The Mystery of the Holy Trinity|55|Why do we believe in the mystery of the Holy Trinity?
+27|1|6|The Mystery of the Holy Trinity|56|How is the mystery of the Holy Trinity revealed in the New Testament?
+28|1|6|The Mystery of the Holy Trinity|58|What did Jesus reveal about Himself?
+29|1|6|The Mystery of the Holy Trinity|59|How was God the Father revealed by Jesus?
+30|1|6|The Mystery of the Holy Trinity|60|How did Jesus reveal the Holy Spirit?
+31|1|7|The Holy Trinity: Father, Son, and Holy Spirit|63|What did Jesus teach His disciples about God the Father, God the Son, and God the Holy Spirit?
+32|1|7|The Holy Trinity: Father, Son, and Holy Spirit|66|Who is God the Father?
+33|1|7|The Holy Trinity: Father, Son, and Holy Spirit|67|Who is God the Son?
+34|1|7|The Holy Trinity: Father, Son, and Holy Spirit|68|Who is God the Holy Spirit?
+35|1|7|The Holy Trinity: Father, Son, and Holy Spirit|69|In what ways can we honor the Holy Trinity?
+36|1|8|Creation|77|What is creation?
+37|1|8|Creation|79|Can we know God through created things?
+38|1|9|Angelic Creation and the Fall of the Bad Angels|85|When did the mystery of salvation begin?
+39|1|9|Angelic Creation and the Fall of the Bad Angels|86|Who are the angels?
+40|1|9|Angelic Creation and the Fall of the Bad Angels|88|Who are the devils?
+41|1|9|Angelic Creation and the Fall of the Bad Angels|92|Where are the angels who remained faithful to God?
+42|1|10|The Creation of Man|101|How was man created?
+43|1|10|The Creation of Man|102|In what way was man created in the image and likeness of God?
+44|1|10|The Creation of Man|106|Is the soul directly created by God?
+45|1|11|Our First Parents: Adam and Eve|111|What special gifts did God give to Adam and Eve?
+46|1|11|Our First Parents: Adam and Eve|114|What commandment did God give Adam and Eve?
+47|1|11|Our First Parents: Adam and Eve|116|What was God’s first gift leading us to Christ?
+48|1|12|God’s Presence in Created History|123|What did God’s action in the Old Testament reveal and prove to us?
+49|1|12|God’s Presence in Created History|126|In what event is God’s all-powerful action for our salvation especially seen?
+50|1|12|God’s Presence in Created History|127|How should we regard creation?
+51|1|12|God’s Presence in Created History|130|How was God especially present in the history of man?
+52|1|12|God’s Presence in Created History|131|How is God present to us in our own day?
+53|1|13|The Fall of Man and Original Sin|139|What was the original sin?
+54|1|13|The Fall of Man and Original Sin|141|Why are all men conceived and born in original sin?
+55|1|13|The Fall of Man and Original Sin|144|What happens in Baptism?
+56|1|13|The Fall of Man and Original Sin|145|Was anyone exempt from original sin?
+57|1|14|Personal Sin|149|What is actual or personal sin?
+58|1|14|Personal Sin|151|When someone commits a personal sin, what happens?
+59|1|15|Mortal and Venial Sin|157|What is mortal sin?
+60|1|15|Mortal and Venial Sin|158|What are the effects of mortal sin?
+61|1|15|Mortal and Venial Sin|160|What is venial sin?
+62|1|15|Mortal and Venial Sin|162|Under what conditions does a Christian commit a mortal sin?
+63|1|15|Mortal and Venial Sin|165|When is an act right or wrong?
+64|1|16|Knowing God’s Will and His Merciful Forgiveness|169|How do we know God’s will?
+65|1|16|Knowing God’s Will and His Merciful Forgiveness|170|Does God forgive our sins?
+66|1|16|Knowing God’s Will and His Merciful Forgiveness|173|How does God draw the sinner to salvation?
+67|1|16|Knowing God’s Will and His Merciful Forgiveness|176|How are venial sins forgiven?
+68|1|17|Capital Sins|181|What is a capital sin?
+69|1|17|Capital Sins|181|What are the capital sins?
+70|1|18|Temptation|187|What is temptation?
+71|1|18|Temptation|188|Where do temptations come from?
+72|1|19|The Incarnation|225|Of all of God’s works, which is the greatest?
+73|1|19|The Incarnation|256|What does the Incarnation mean?
+74|1|19|The Incarnation|230|Why did God the Son come into the world?
+75|1|20|Jesus is God|235|Is Jesus Christ true God?
+76|1|20|Jesus is God|237|How does the Nicene Creed express our faith in Christ’s divinity?
+77|1|20|Jesus is God|239|Did Jesus say He was God?
+78|1|20|Jesus is God|242|During His Passion, did Jesus say that He was God?
+79|1|20|Jesus is God|244|Does the Catholic Church teach that Jesus is truly God?
+80|1|20|Jesus is God|246|Is there any further evidence in the New Testament pointing to Jesus as God?
+81|1|20|Jesus is God|248|How does the New Testament portray Jesus?
+82|1|21|Jesus is True Man|257|Is Jesus Christ true man?
+83|1|21|Jesus is True Man|261|In what ways did Jesus show His concern for us?
+84|1|22|Jesus Our Savior and Redeemer|267|Why did Jesus Christ become man?
+85|1|22|Jesus Our Savior and Redeemer|270|What do we mean when we say that Jesus is our Savior?
+86|1|22|Jesus Our Savior and Redeemer|272|Is there any other Savior besides Jesus?
+87|1|22|Jesus Our Savior and Redeemer|276|How did Jesus Christ redeem us?
+88|1|23|The Passion of Our Lord: The Agony on Mount Olivet|284|What did the agony and prayer in the garden express?
+89|1|23|The Passion of Our Lord: The Agony on Mount Olivet|285|Why were the sufferings Christ bore for us so severe?
+90|1|24|The Passion of Our Lord: Jesus before Pilate|291|Before His death what trials did Jesus undergo?
+91|1|24|The Passion of Our Lord: Jesus before Pilate|293|What was Christ’s mission on earth?
+92|1|24|The Passion of Our Lord: Jesus before Pilate|295|In what sense do we speak of the necessity of the Passion and death of Jesus?
+93|1|24|The Passion of Our Lord: Jesus before Pilate|296|Did Jesus Himself declare that He had to suffer?
+94|1|25|The Passion of Our Lord: The Crucifixion of Jesus|302|What did Jesus suffer upon the Cross?
+95|1|25|The Passion of Our Lord: The Crucifixion of Jesus|304|What are the “seven last words” of Jesus as recorded in the Gospels?
+96|1|25|The Passion of Our Lord: The Crucifixion of Jesus|306|How did Jesus die?
+97|1|25|The Passion of Our Lord: The Crucifixion of Jesus|307|What effects did the Passion of Jesus have?
+98|1|26|The Resurrection|316|How did Jesus Christ show the power He has as the Son of God?
+99|1|26|The Resurrection|318|Why is the Resurrection of our Lord so important?
+100|1|26|The Resurrection|321|Why does the Resurrection of Jesus play a central part in the life of faith?
+101|1|26|The Resurrection|324|What was the Easter proclamation?
+102|1|27|Jesus Appears to the Apostles|328|How did Jesus lead His Apostles to faith in His Resurrection?
+103|1|27|Jesus Appears to the Apostles|330|How did the Holy Spirit lead the Apostles towards faith in the Resurrection of Jesus?
+104|1|28|Belief in the Resurrection|335|What does the Church teach about the Resurrection?
+105|1|28|Belief in the Resurrection|336|What does it mean to believe in the bodily Resurrection of Jesus from the dead?
+106|1|29|The Benefits of the Resurrection|339|What has Jesus Christ done for us through His Resurrection?
+107|1|29|The Benefits of the Resurrection|341|How does the risen Jesus help us now?
+108|1|30|The Ascension: Jesus Returns to the Father|348|What is the meaning of the Ascension of Christ?
+109|1|30|The Ascension: Jesus Returns to the Father|350|What are the two distinctive aspects of the mystery of the Ascension?
+110|1|30|The Ascension: Jesus Returns to the Father|351|What has Christ done for us through His Ascension?
+111|1|30|The Ascension: Jesus Returns to the Father|353|How is Christ present with the Church?
+112|1|31|Christ the King: Center of Our life|358|What plan does God have for mankind?
+113|1|31|Christ the King: Center of Our life|362|Is Jesus Christ the center of all God’s saving work?
+114|1|32|The Holy Spirit|389|Who is God the Holy Spirit?
+115|1|32|The Holy Spirit|391|The Holy Spirit proceeds from the Father and the Son. What is meant by this?
+116|1|32|The Holy Spirit|395|What did Jesus Christ say about the Holy Spirit?
+117|1|33|The Work of the Holy Spirit in the Church|403|When did the Holy Spirit descend upon the Church?
+118|1|33|The Work of the Holy Spirit in the Church|406|How does the Holy Spirit carry out Christ’s work in the Church?
+119|1|33|The Work of the Holy Spirit in the Church|409|Where is God the Holy Spirit especially present?
+120|1|33|The Work of the Holy Spirit in the Church|413|What does God the Holy Spirit accomplish for the Church?
+121|1|33|The Work of the Holy Spirit in the Church|415|Why is the Holy Spirit called the Soul of the Church?
+122|1|33|The Work of the Holy Spirit in the Church|418|What is the task of the Holy Spirit in the Church?
+123|1|34|Devotion to the Holy Spirit|425|How should the Holy Spirit be honored?
+124|1|35|Sanctifying Grace|435|What takes place when a person accepts the Spirit of Christ?
+125|1|35|Sanctifying Grace|438|What is sanctifying grace?
+126|1|35|Sanctifying Grace|440|What does this new life of sanctifying grace do for man?
+127|1|35|Sanctifying Grace|444|What does God’s gift of grace do for us?
+128|1|36|Actual Grace|449|What is actual grace?
+129|1|37|The Indwelling of the Holy Spirit in Man|455|What does the indwelling of the Holy Spirit do for man?
+130|1|37|The Indwelling of the Holy Spirit in Man|459|What is our greatest dignity?
+131|1|38|The Theological Virtues|469|What are the theological virtues?
+132|1|38|The Theological Virtues|473|What is the theological virtue of faith?
+133|1|38|The Theological Virtues|479|What is the theological virtue of hope?
+134|1|38|The Theological Virtues|484|What is the theological virtue of charity?
+135|1|39|The Cardinal Virtues|491|What are the cardinal virtues?
+136|1|39|The Cardinal Virtues|496|Why are prudence, justice, fortitude, and temperance called cardinal virtues?
+137|1|40|The Seven Gifts of the Holy Spirit|501|What are the seven gifts of the Holy Spirit?
+138|1|41|What Is the Catholic Church?|527|What is the Catholic Church?
+139|1|41|What Is the Catholic Church?|533|When did Jesus start the Catholic Church?
+140|1|42|Gifts of God to the Catholic Church|539|What are some of the basic gifts given by God to the Catholic Church?
+141|1|42|Gifts of God to the Catholic Church|543|What are the two sources of divine truth which constitute the truths of the faith?
+142|1|42|Gifts of God to the Catholic Church|553|What are some other gifts of the Catholic Church besides the truths of the faith?
+143|1|42|Gifts of God to the Catholic Church|554|Are there other gifts of the Church besides the truths of the faith and the sacraments?
+144|1|42|Gifts of God to the Catholic Church|555|By means of these gifts, what does the Catholic Church do for mankind?
+145|1|43|The Catholic Church Belongs to Christ|559|Why does the Catholic Church belong entirely to Christ?
+146|1|43|The Catholic Church Belongs to Christ|561|How does the Catholic see the Church?
+147|1|43|The Catholic Church Belongs to Christ|562|Why is the Catholic Church a living continuation of Christ on earth?
+148|1|43|The Catholic Church Belongs to Christ|564|Why is the Catholic Church called the sacrament of Christ?
+149|1|43|The Catholic Church Belongs to Christ|566|What do we mean when we speak of the Church in heaven?
+150|1|44|Leaders of the Catholic Church|571|Does the Catholic Church have leaders?
+151|1|44|Leaders of the Catholic Church|574|Who is the Holy Father, the Pope?
+152|1|44|Leaders of the Catholic Church|578|Who are the bishops of the Church?
+153|1|44|Leaders of the Catholic Church|582|What are the chief responsibilities of the Pope and bishops of the Catholic Church?
+154|1|44|Leaders of the Catholic Church|588|Who directs Christ’s work in the Catholic Church?
+155|1|45|Members of the Catholic Church|593|What is owed to the Pope and bishops by the faithful?
+156|1|45|Members of the Catholic Church|595|Why is respect owed to everyone in the Church?
+157|1|45|Members of the Catholic Church|597|Why is the Catholic Church a community?
+158|1|45|Members of the Catholic Church|602|Is everyone in the Church equal?
+159|1|45|Members of the Catholic Church|606|Who in the Church is called to a life of holiness?
+160|1|46|The Role of the Catholic Church|611|Why is the Catholic Church essentially missionary?
+161|1|46|The Role of the Catholic Church|616|What is the role of the Church in the world?
+162|1|46|The Role of the Catholic Church|620|How does the Catholic Church minister to our spiritual needs?
+163|1|46|The Role of the Catholic Church|621|How does the Catholic Church minister to the bodily needs of people?
+164|1|46|The Role of the Catholic Church|623|How can we help unbelievers find God?
+165|1|46|The Role of the Catholic Church|626|What is our duty towards the world?
+166|1|47|Christian Unity|631|Why is the unity of Christians in faith and love God’s will?
+167|1|47|Christian Unity|633|How is Christian unity promoted by Catholics?
+168|1|47|Christian Unity|636|Why should we respect all men of good will?
+169|1|48|The Catholic Church: Means of Salvation|641|What do we believe about the Catholic Church and salvation?
+170|1|48|The Catholic Church: Means of Salvation|645|How do the laity share in Christ’s mission?
+171|1|48|The Catholic Church: Means of Salvation|650|How is the Catholic Church an institution of salvation?
+172|1|49|The Marks of the Church: The Church is One|657|What are the marks that point out the true Church founded by Jesus?
+173|1|49|The Marks of the Church: The Church is One|659|Why is the Catholic Church one?
+174|1|49|The Marks of the Church: The Church is One|661|How did Jesus indicate that His Church is one?
+175|1|49|The Marks of the Church: The Church is One|662|Why are we united by a spiritual leader?
+176|1|49|The Marks of the Church: The Church is One|663|Why are we united in worship?
+177|1|50|The Marks of the Church: The Church is Holy|667|Why is the Catholic Church holy?
+178|1|51|The Marks of the Church: The Church is Catholic|673|Why is the Church catholic or universal?
+179|1|51|The Marks of the Church: The Church is Catholic|675|How long has the Catholic Church been in existence?
+180|1|51|The Marks of the Church: The Church is Catholic|677|Does the Catholic Church teach all the truths that Jesus Christ taught?
+181|1|52|The Marks of the Church: The Church is Apostolic|681|Why is the Catholic Church apostolic?
+182|1|53|The Communion of Saints|697|What do we mean when we say, “I believe in the Communion of Saints”?
+183|1|53|The Communion of Saints|701|Why is the Church called the Church Militant?
+184|1|53|The Communion of Saints|704|How do we help each other?
+185|1|53|The Communion of Saints|705|What is the Church Suffering?
+186|1|53|The Communion of Saints|708|What is our duty toward the deceased?
+187|1|53|The Communion of Saints|713|What is the Church Triumphant?
+188|1|53|The Communion of Saints|723|Why does the Church honor the canonized saints?
+189|1|54|The Forgiveness of Sins|727|What do we mean when we say, “I believe in the forgiveness of sins”?
+190|2|55|Sacraments: Actions of Christ|5|In what way is the saving work of Christ continued?
+191|2|55|Sacraments: Actions of Christ|9|How does the Church continue Christ’s work?
+192|2|55|Sacraments: Actions of Christ|11|What are the sacraments?
+193|2|55|Sacraments: Actions of Christ|15|What do the sacraments reveal?
+194|2|55|Sacraments: Actions of Christ|20|Why are the sacraments referred to as actions of Christ?
+195|2|56|The Purpose of the Sacraments|25|Why did Jesus institute the sacraments?
+196|2|56|The Purpose of the Sacraments|29|Why does the Church encourage Catholics to receive the sacraments?
+197|2|56|The Purpose of the Sacraments|31|What purpose do the sacraments serve?
+198|2|57|Sacramentals|37|What are sacramentals?
+199|2|57|Sacramentals|39|What is the effect of the sacramentals?
+200|2|57|Sacramentals|40|What are some of the sacramentals?
+201|2|58|The Sacrament of Baptism|47|What is the sacrament of Baptism?
+202|2|58|The Sacrament of Baptism|52|What relationship with God is begun at Baptism?
+203|2|59|The Sacrament of Confirmation|59|What is the sacrament of Confirmation?
+204|2|59|The Sacrament of Confirmation|62|What happens when we receive the seal of the Spirit at Confirmation?
+205|2|60|The Sacrament of Penance|69|What is the sacrament of Penance?
+206|2|60|The Sacrament of Penance|74|How does the sacrament of Penance help us?
+207|2|60|The Sacrament of Penance|79|If a Catholic has committed a mortal sin, is it necessary for him to go to confession?
+208|2|60|The Sacrament of Penance|82|What does perfect sorrow for sin do for a person?
+209|2|60|The Sacrament of Penance|86|What does the Church desire concerning confession?
+210|2|60|The Sacrament of Penance|88|What do we gain by confessing venial sins?
+211|2|61|Reparation for Sin and Indulgences|93|Must we still suffer for our sins in other ways even after they are forgiven?
+212|2|61|Reparation for Sin and Indulgences|93|What is an indulgence?
+213|2|61|Reparation for Sin and Indulgences|94|How does the Church have the power to grant indulgences?
+214|2|61|Reparation for Sin and Indulgences|95|What are the conditions for gaining an indulgence?
+215|2|61|Reparation for Sin and Indulgences|96|May we gain an indulgence for the benefit of the departed?
+216|2|61|Reparation for Sin and Indulgences|97|What is the difference between a plenary and a partial indulgence?
+217|2|61|Reparation for Sin and Indulgences|97|What are some examples of partial indulgences?
+218|2|62|The Sacrament of Holy Orders|107|What is the sacrament of Holy Orders?
+219|2|62|The Sacrament of Holy Orders|111|What does episcopal consecration or ordination confer?
+220|2|62|The Sacrament of Holy Orders|112|What special grace is given by Jesus in the sacrament of Holy Orders?
+221|2|62|The Sacrament of Holy Orders|116|What can priests do as representatives of Jesus?
+222|2|63|The Sacrament of Anointing of the Sick|125|What is the sacrament of Anointing of the Sick?
+223|2|63|The Sacrament of Anointing of the Sick|127|When is the sacrament of Anointing of the Sick best received?
+224|2|63|The Sacrament of Anointing of the Sick|128|What does the Church ask the Lord for by this anointing?
+225|2|63|The Sacrament of Anointing of the Sick|130|What does the Church ask the sick to do?
+226|2|64|The Sacrament of Matrimony|133|Who instituted the sacrament of Matrimony?
+227|2|64|The Sacrament of Matrimony|137|Who elevated marriage to the dignity of a sacrament?
+228|2|64|The Sacrament of Matrimony|138|Who are the ministers of the sacrament of Matrimony?
+229|2|64|The Sacrament of Matrimony|140|In what ways can we see the dignity of the sacrament of Matrimony?
+230|2|64|The Sacrament of Matrimony|144|What do Christian spouses commit themselves to do in the sacrament of Matrimony?
+231|2|64|The Sacrament of Matrimony|148|Why did God institute marriage?
+232|2|64|The Sacrament of Matrimony|152|How long does the bond of sacramental marriage last?
+233|2|65|The Sacrament of Matrimony and the Family|159|What is the purpose of conjugal love and family life?
+234|2|65|The Sacrament of Matrimony and the Family|162|What is every family’s calling?
+235|2|65|The Sacrament of Matrimony and the Family|164|How does the Christian family show the Savior’s living presence in the world?
+236|2|66|The Holy Eucharist|195|What is a sacrifice to God?
+237|2|66|The Holy Eucharist|202|What is the Holy Eucharist?
+238|2|66|The Holy Eucharist|204|Why does the Church celebrate the Eucharist?
+239|2|67|The Eucharist Made Present|209|What takes place when a priest speaks the words of Eucharistic consecration?
+240|2|67|The Eucharist Made Present|212|How is Jesus present in the Eucharist?
+241|2|68|The Sacrifice of the Mass|217|What is the Holy Sacrifice of the Mass?
+242|2|68|The Sacrifice of the Mass|222|What is the liturgy?
+243|2|68|The Sacrifice of the Mass|223|What is the most important form of all Christian liturgy?
+244|2|68|The Sacrifice of the Mass|224|What are the two principal parts of the Holy Sacrifice of the Mass?
+245|2|68|The Sacrifice of the Mass|227|Why is the Holy Mass offered?
+246|2|68|The Sacrifice of the Mass|229|How do lay people participate in the Mass?
+247|2|69|The Mass: Remembrance and Sacrifice|237|Why is the Mass both a sacrifice and a sacred meal?
+248|2|69|The Mass: Remembrance and Sacrifice|239|Why is the Mass the one sacrifice of Christ?
+249|2|69|The Mass: Remembrance and Sacrifice|241|Who has been empowered to offer the Eucharistic Sacrifice?
+250|2|70|Holy Communion|245|What is Holy Communion?
+251|2|70|Holy Communion|250|Why is the Holy Eucharist a sacrament of unity?
+252|2|70|Holy Communion|253|What does Jesus do for properly prepared Catholics in the Eucharist?
+253|2|71|The Effects of Holy Communion|259|Does reception of the Holy Eucharist at Holy Communion increase the supernatural life of our soul?
+254|2|71|The Effects of Holy Communion|264|Does Holy Communion unite our souls more closely to Jesus?
+255|2|71|The Effects of Holy Communion|268|Does Holy Communion increase our love for God?
+256|2|71|The Effects of Holy Communion|272|Does Holy Communion increase our love of neighbor?
+257|2|71|The Effects of Holy Communion|276|Why is Holy Communion a pledge of future glory?
+258|2|72|The Real Presence|281|Why does Jesus become present in the Holy Eucharist?
+259|2|72|The Real Presence|288|Why is the Holy Eucharist reserved in our churches?
+260|2|72|The Real Presence|292|What do we owe to Jesus, reserved in the Blessed Sacrament?
+261|2|72|The Real Presence|295|Why is the Holy Eucharist the center of all sacramental life?
+262|2|73|What Prayer Is|307|What is prayer?
+263|2|73|What Prayer Is|313|What is mental or interior prayer?
+264|2|73|What Prayer Is|319|Why is prayer necessary?
+265|2|73|What Prayer Is|326|What are the four purposes of prayer?
+266|2|74|How We Should Pray|333|How should we pray?
+267|2|74|How We Should Pray|337|Why is Jesus the divine Model of prayer?
+268|2|75|The “Our Father”|345|Why is the “Our Father” a prayer of perfect and unselfish love?
+269|2|76|The Moral Life of Christians|373|If we want to answer God’s love with our love, what must we do?
+270|2|76|The Moral Life of Christians|375|What does Catholic morality teach?
+271|2|76|The Moral Life of Christians|379|How is Catholic morality supported and guided?
+272|2|76|The Moral Life of Christians|382|What is conscience?
+273|2|76|The Moral Life of Christians|384|Should each person have a right conscience?
+274|2|76|The Moral Life of Christians|387|How should a Catholic form a right conscience?
+275|2|76|The Moral Life of Christians|390|What does obedience to the Holy Spirit entail?
+276|2|77|Perfect Christian Love|395|What is the summary of all of the commandments?
+277|2|77|Perfect Christian Love|398|Why is the love of God called the soul of morality?
+278|2|77|Perfect Christian Love|102|What is man’s greatest responsibility?
+279|2|77|Perfect Christian Love|407|How does a person obtain holiness?
+280|2|77|Perfect Christian Love|411|Why do men and women enter into consecrated vocations?
+281|2|78|Our Duties Toward God|417|How do we know the duties which flow from love of God and man?
+282|2|78|Our Duties Toward God|424|What can be said in general about a Christian’s duties toward God?
+283|2|78|Our Duties Toward God|429|How do we sin against God’s honor?
+284|2|79|Our Duties Toward Our Neighbor|441|What responsibilities do we have toward other people?
+285|2|79|Our Duties Toward Our Neighbor|448|How can we show the justice and charity of Christ to others?
+286|2|79|Our Duties Toward Our Neighbor|453|How should our judgments of others and our speech be ruled?
+287|2|79|Our Duties Toward Our Neighbor|456|In obedience to lawful authority, how do we show our love for our neighbor?
+288|2|79|Our Duties Toward Our Neighbor|465|In what ways do we sin against our neighbor?
+289|2|80|Our Duties Toward Self|483|What responsibilities do we have towards self?
+290|2|80|Our Duties Toward Self|490|What does the thought of the duties and obligations which flow from the love of God and man help the Christian to do?
+291|2|81|Death, Judgment, Hell, Purgatory, and Heaven|503|Why should a Christian face death with courage and joy?
+292|2|81|Death, Judgment, Hell, Purgatory, and Heaven|508|What is the particular judgment?
+293|2|81|Death, Judgment, Hell, Purgatory, and Heaven|511|What is hell?
+294|2|81|Death, Judgment, Hell, Purgatory, and Heaven|513|What is Purgatory?
+295|2|81|Death, Judgment, Hell, Purgatory, and Heaven|514|What is the Beatific Vision?
+296|2|82|Resurrection of the Body|521|What do we mean when we say, “We believe in the resurrection of the body”?
+297|2|82|Resurrection of the Body|523|What do we mean when we say, “We believe in life everlasting”?
+298|2|83|The Last Judgment|527|What is the Last Judgment?
+299|2|83|The Last Judgment|530|What will take place on the day of the Last Judgment?
+300|2|83|The Last Judgment|535|What will take place when Christ returns with power?
+301|2|83|The Last Judgment|538|When will we fully reach our eternal destiny?
+302|2|84|Mary, Mother of God and of the Church|541|Why does Mary, after Christ, have the highest place in the Church?
+303|2|84|Mary, Mother of God and of the Church|547|What are some of the special gifts which God gave to Mary?
+304|2|84|Mary, Mother of God and of the Church|552|What is the wish of the Catholic Church concerning devotion to Mary?
