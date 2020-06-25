@@ -19,7 +19,7 @@ class Question
         $fields = explode("|", $line);
 
         if (count($fields) != 6) {
-            throw new InvalidArgumentException('Line not formatted correctly: ' . $line);
+            throw new IndexException('Line not formatted correctly: ' . $line);
         }
 
         $this->number = intval(trim($fields[0]));

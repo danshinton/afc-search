@@ -7,6 +7,9 @@ This application uses the Laravel framework, so it can be run a number of ways.
 
 1. From the command line:
    ```shell script
+   cp .env.example .env
+   npm install
+   composer update
    php artisan serve
    ```
    The app will be accessible at [http://localhost:8080](http://localhost:8080). Stop the app with a `CTRL+C`.

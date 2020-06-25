@@ -4,8 +4,6 @@
 namespace App\Net\Shinton;
 
 
-use http\Exception\InvalidArgumentException;
-
 class CatechismIndexer
 {
     private $bestFitIndex;
@@ -29,7 +27,7 @@ class CatechismIndexer
         foreach (file($dataPath) as $line) {
             $fields = explode('|', $line);
             if (count($fields) != 3) {
-                throw new InvalidArgumentException('Line not formatted correctly: ' . $line);
+                throw new IndexException('Line not formatted correctly: ' . $line);
             }
 
             $question = intval($fields[0]);
@@ -59,7 +57,7 @@ class CatechismIndexer
                 if (preg_match('/\p{Pd}/', $chapter)) {
                     $range = preg_split('/\p{Pd}/', $chapter);
                     if (count($range) != 2) {
-                        throw new InvalidArgumentException('Range not formatted correctly: ' . $chapter);
+                        throw new IndexException('Range not formatted correctly: ' . $chapter);
                     }
 
                     $start = intval($range[0]);
