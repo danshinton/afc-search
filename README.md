@@ -24,10 +24,6 @@ This application uses the Laravel framework, so it can be run a number of ways.
 
 ## TODO
 This is a hobby app so there are a few things I would like to add:
-* Check this project into a private github repo
-  * Don't commit node_modules. Add to `.gitignore`.
-  * This means npm install will have to be run on a fresh project checkout
-* Check to ensure I don't have to add `npm install` to the Docker build
 * Use sqlite to store and query the data
 * Add links to the PDF versions of the AFC
 * Add "Copy to Clipboard" feature to copy search results
@@ -36,3 +32,4 @@ This is a hobby app so there are a few things I would like to add:
 * Take a look at how a Laravel app gets deployed in production. There may be some steps I need to do to remove dev
 dependencies.
 * Set the favicon to the AFC symbol
+* Figure out how to cache dependencies so `npm install` and `compose update` don't have to download from the internet
