@@ -5,30 +5,57 @@ questions in the Apostolate's Family Catechism (AFC).
 ## Running the app
 This application uses the Laravel framework, so it can be run a number of ways.
 
-1. From the command line:
+### From the command line:
+1. Set up the environment
    ```shell script
    cp .env.example .env
+   echo "DB_DATABASE=$(pwd)/database/database.sqlite" >> .env
+   ```
+   Note: The `DB_DATABASE` must be set to the fully qualified path to the `database.sqlite` in order
+   for `migrate`, `db:seed`, and `serve` to work.  
+
+1. Install application libraries
+   ```shell script
    npm install
    composer update
+   ```
+
+1. Initialize the database
+   ```shell script
+   touch database/database.sqlite
+   php artisan migrate
+   php artisan db:seed
+   ```
+1. Start the server
+   ```
    php artisan serve
    ```
-   The app will be accessible at [http://localhost:8080](http://localhost:8080). Stop the app with a `CTRL+C`.
-    
-2. As a container:
+
+The app will be accessible at [http://localhost:8080](http://localhost:8080).
+
+Stop the app with a `CTRL+C`.
+
+### As a container:
+1. Build the container
    ```shell script
    docker-compose build
-   docker-compose up
    ```
-   The app will be accessible at [http://localhost](http://localhost). If you want the container to run detached from
-   the console, use `docker-compose up -d`. Stop the app with `docker-compose down`.
+   
+1. Start the container
+   ```shell script
+    docker-compose up
+   ```
+
+The app will be accessible at [http://localhost](http://localhost).
+
+If you want the container to run detached from
+the console, use `docker-compose up -d`. Stop the app with a `CTRL+C` or `docker-compose down` if running detached.
 
 ## TODO
 This is a hobby app so there are a few things I would like to add:
-* Use sqlite to store and query the data
-  * Add `php artisan db:migrate` and `php artisan db:seed` to instructions
-  * Figure out the correct relative path for the sqlite database in `.env` when app is running
 * Add links to the PDF versions of the AFC
 * Add "Copy to Clipboard" feature to copy search results
+* See if we can make seeding faster by eliminating the double query for Question
 * Add automated testing
 * Migrate to a VUE frontend so that the search does not reload the page
 * Create list of suggested CCC topics that launch a search when clicked

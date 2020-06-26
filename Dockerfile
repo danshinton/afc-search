@@ -23,9 +23,13 @@ RUN curl --silent --show-error https://getcomposer.org/installer | php -- --inst
 
 # Build app
 WORKDIR "/var/www/html"
-RUN cp .env.example .env &&\
-    npm install &&\
-    composer update &&\
+RUN cp .env.example .env && \
+    echo "DB_DATABASE=$(pwd)/database/database.sqlite" >> .env && \
+    npm install && \
+    composer update && \
+    touch database/database.sqlite && \
+    php artisan migrate && \
+    php artisan db:seed && \
     chown -R www-data:www-data .
 
 FROM php:7.3-apache
