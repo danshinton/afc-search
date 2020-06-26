@@ -25,6 +25,10 @@ This application uses the Laravel framework, so it can be run a number of ways.
 ## TODO
 This is a hobby app so there are a few things I would like to add:
 * Use sqlite to store and query the data
+  * Get rid of legacy indexer
+  * Extract out chapter parser into util class
+  * Add `php artisan db:migrate` and `php artisan db:seed` to instructions
+  * Figure out the correct relative path for the sqlite database in `.env` when app is running
 * Add links to the PDF versions of the AFC
 * Add "Copy to Clipboard" feature to copy search results
 * Migrate to a VUE frontend so that the search does not reload the page
