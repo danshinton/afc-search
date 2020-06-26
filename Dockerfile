@@ -2,6 +2,7 @@ FROM php:7.3-apache AS builder
 
 RUN apt-get update
 
+# Tell debian we want a modern version of node, not the ancient one they install by default
 RUN apt-get install -y \
     curl \
     sudo \
@@ -9,6 +10,7 @@ RUN apt-get install -y \
 
 RUN curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
 
+# Install build dependencies
 RUN apt-get install -y \
     nodejs \
     git \
@@ -42,4 +44,5 @@ RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-av
 
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
+# Copy over the app we just built
 COPY --from=builder /var/www/html /var/www/html
