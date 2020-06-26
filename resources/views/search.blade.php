@@ -16,7 +16,7 @@
     </head>
     <body>
         <div class="s130">
-            <form action="{{ route('query.query') }}" method="POST">
+            <form action="{{ route('question.query') }}" method="POST">
                 @csrf
                 <div style="text-align: center; padding-bottom: 20px">
                     <h1>Apostolate's Family Catechism Lookup</h1>
@@ -28,7 +28,7 @@
                                 <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
                             </svg>
                         </div>
-                        <input id="search" type="text" placeholder="Enter your CCC paragraph numbers here" name="query"/>
+                        <input id="search" type="text" placeholder="Enter your CCC paragraph numbers here" name="paragraphs"/>
                     </div>
                     <div class="input-field second-wrap">
                         <input class="btn-search" type="submit" value="SEARCH">
@@ -52,7 +52,7 @@
                             <h2>Best Fit:</h2>
                             <ul>
                                 @forelse($results->bestFit as $bestFit)
-                                    <li>Question {{$bestFit->number}}: {{$bestFit->title}} (vol. {{$bestFit->volume}}, pg. {{$bestFit->pageNumber}})</li>
+                                    <li>Question {{$bestFit->number}}: {{$bestFit->title}} (vol. {{$bestFit->volume}}, pg. {{$bestFit->page}})</li>
                                 @empty
                                     <li>None</li>
                                 @endforelse
@@ -62,7 +62,7 @@
                             <h2>Related:</h2>
                             <ul>
                                 @forelse($results->related as $related)
-                                    <li>Question {{$related->number}}: {{$related->title}} (vol. {{$related->volume}}, pg. {{$related->pageNumber}})</li>
+                                    <li>Question {{$related->number}}: {{$related->title}} (vol. {{$related->volume}}, pg. {{$related->page}})</li>
                                 @empty
                                     <li>None</li>
                                 @endforelse
@@ -75,22 +75,5 @@
         </div>
 
         <script src="js/extention/choices.js"></script>
-
-{{--        <div class="flex-center position-ref full-height">--}}
-{{--            <div class="content">--}}
-{{--                <div class="title m-b-md">--}}
-{{--                    Apostolate's Family Catechism Lookup--}}
-{{--                </div>--}}
-
-{{--                <form action="{{ route('query.query') }}" method="POST">--}}
-{{--                    @csrf--}}
-{{--                    <label for="query">Enter CCC paragraphs:</label>--}}
-{{--                    <input type="text" id="query" name="query">--}}
-{{--                    <input type="submit" value="Search">--}}
-{{--                </form>--}}
-
-{{--                --}}
-{{--            </div>--}}
-{{--        </div>--}}
     </body>
 </html>

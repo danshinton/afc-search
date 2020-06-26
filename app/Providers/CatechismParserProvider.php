@@ -2,10 +2,10 @@
 
 namespace App\Providers;
 
-use App\Net\Shinton\CatechismIndexer;
+use App\Net\Shinton\CatechismParser;
 use Illuminate\Support\ServiceProvider;
 
-class IndexerServiceProvider extends ServiceProvider
+class CatechismParserProvider extends ServiceProvider
 {
     /**
      * Register services.
@@ -14,8 +14,8 @@ class IndexerServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(CatechismIndexer::class, function ($app) {
-            return new CatechismIndexer();
+        $this->app->singleton(CatechismParser::class, function ($app) {
+            return new CatechismParser();
         });
     }
 
