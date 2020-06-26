@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/', 'QueryController@query')->name('query.query');
+Route::post('/', 'QuestionController@query')->name('query.query');
