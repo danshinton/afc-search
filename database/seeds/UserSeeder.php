@@ -12,6 +12,7 @@ class UserSeeder extends Seeder
                 'name' => 'Dan Shinton',
                 'email' => 'dan@shinton.net',
                 'password' => Hash::make('password'),
+                'role' => 'admin'
             ]);
         }
     }

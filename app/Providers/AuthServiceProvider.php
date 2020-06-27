@@ -25,6 +25,13 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        Gate::define('create-user', function($user) {
+            return $user->isAdmin();
+        });
+
+        Gate::define('download-pdf', function($user) {
+            // Allow all authenticated users to download. Perhaps in the future we will have a specific permission.
+            return true;
+        });
     }
 }

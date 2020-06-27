@@ -57,10 +57,8 @@ This is a hobby app so there are a few things I would like to add:
   * Switch between search and the page with the links using
     [Bootstrap tabs or pills](https://getbootstrap.com/docs/4.0/components/navs/) 
   * Add user authorization to download PDF
-    * Protect the register link. There will be no self register.
-    * Add pages for admin to create account
-    * Seed admin user into database
-    * Login redirects to main page, not home
+    * Add page for admin to disable account
+    * Add role to registration form 
     * `npm run dev` is now required to compile SASS
   * If not authorized, then display the link to purchase
   * Also create a link to the CCC on the USCCB website

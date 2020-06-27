@@ -26,7 +26,7 @@
                     @isset($results)
                         <div>
                             <h2>Results for query "{{ $results->query }}"</h2>
-                            <h3 style="margin-top: -0.8em; font-style: italic">
+                            <h3 style="margin-top: -0.3em; font-style: italic">
                                 @if($results->total == 0)
                                     No results found
                                 @elseif($results->total == 1)
