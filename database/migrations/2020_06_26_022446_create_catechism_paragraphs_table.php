@@ -15,8 +15,8 @@ class CreateCatechismParagraphsTable extends Migration
     {
         Schema::create('catechism_paragraphs', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
             $table->integer('number');
+            $table->timestamps();
         });
     }
 

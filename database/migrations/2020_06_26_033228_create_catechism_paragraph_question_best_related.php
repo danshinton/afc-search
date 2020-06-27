@@ -14,9 +14,13 @@ class CreateCatechismParagraphQuestionBestRelated extends Migration
     public function up()
     {
         Schema::create('catechism_paragraph_question_related', function (Blueprint $table) {
-            $table->id();
             $table->integer('catechism_paragraph_id');
             $table->integer('question_id');
+
+            $table->foreign('catechism_paragraph_id')->references('id')->on('catechism_paragraphs');
+            $table->foreign('question_id')->references('id')->on('questions');
+
+            $table->primary(['catechism_paragraph_id','question_id']);
         });
     }
 

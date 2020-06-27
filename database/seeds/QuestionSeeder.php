@@ -16,9 +16,9 @@ class QuestionSeeder extends Seeder
 
     public function run()
     {
-        DB::table('questions')->delete();
         DB::table('catechism_paragraph_question_best_fit')->delete();
         DB::table('catechism_paragraph_question_related')->delete();
+        DB::table('questions')->delete();
 
         $dataPath = resource_path() . '/data/AFC-TOC.txt';
 
@@ -47,9 +47,9 @@ class QuestionSeeder extends Seeder
             'number' => intval(trim($fields[0])),
             'volume' => intval(trim($fields[1])),
             'chapter' => intval(trim($fields[2])),
-            'chapter_title' => $fields[3],
+            'chapter_title' => trim($fields[3]),
             'page' => intval(trim($fields[4])),
-            'title' => $fields[5],
+            'title' => trim($fields[5]),
         ]);
     }
 

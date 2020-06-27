@@ -18,3 +18,7 @@ Route::get('/', function () {
 });
 
 Route::post('/', 'QuestionController@query')->name('question.query');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

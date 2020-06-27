@@ -57,8 +57,14 @@ This is a hobby app so there are a few things I would like to add:
   * Switch between search and the page with the links using
     [Bootstrap tabs or pills](https://getbootstrap.com/docs/4.0/components/navs/) 
   * Add user authorization to download PDF
+    * Protect the register link. There will be no self register.
+    * Add pages for admin to create account
+    * Seed admin user into database
+    * Login redirects to main page, not home
+    * `npm run dev` is now required to compile SASS
   * If not authorized, then display the link to purchase
   * Also create a link to the CCC on the USCCB website
+* Change docker build to not include 'require-dev' dependencies
 * Add "Copy to Clipboard" feature to copy search results
 * See if we can make seeding faster by eliminating the double query for Question
 * Add automated testing

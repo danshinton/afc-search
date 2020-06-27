@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="author" content="colorlib.com">
+    @extends('layouts.app')
 
-        <title>Apostolate's Family Catechism Lookup</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-
-        <!-- Styles -->
-        <link href="css/main.css" rel="stylesheet" />
-    </head>
-    <body>
+    @section('content')
         <div class="s130">
             <form action="{{ route('question.query') }}" method="POST">
                 @csrf
@@ -75,5 +61,4 @@
         </div>
 
         <script src="js/extention/choices.js"></script>
-    </body>
-</html>
+    @endsection
