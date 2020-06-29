@@ -10,24 +10,54 @@
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade" id="resources" role="tabpanel" aria-labelledby="resources-tab">
-                <div>
-                    <img src="/images/afc-vol1-thumb.jpg" alt="The Apostolate's Family Catechism, Volume 1">The Apostolate's Family Catechism, Volume 1
-                    @can('download-pdf')
-                        (<a href="{{ route('download', '16431595-5175-44CE-A8A1-3F9A416A6BCC') }}">Download</a>)
-                    @endcan
-                </div>
-                <div>
-                    <img src="/images/afc-vol2-thumb.jpg" alt="The Apostolate's Family Catechism, Volume 2">The Apostolate's Family Catechism, Volume 2
-                    @can('download-pdf')
-                        (<a href="{{ route('download', '9C3ABD70-56BA-40AB-BF9E-EA78A71977EA') }}">Download</a>)
-                    @endcan
-                </div>
-                <div>
-                    <img src="/images/ccc-thumb.jpg" alt="Catechism of the Catholic Church">Catechism of the Catholic Church (<a href="http://ccc.usccb.org/flipbooks/catechism/index.html" target="_blank">Link</a>)
-                </div>
-                <div>
-                    <img src="/images/compendium-thumb.jpg" alt="Compendium of the Catechism of the Catholic Church">Compendium of the Catechism of the Catholic Church (<a href="https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html" target="_blank">Link</a>)
+            <div class="tab-pane fade text-center" id="resources" role="tabpanel" aria-labelledby="resources-tab">
+                <div class="rl">
+                    <div class="rl-container">
+                        <div class="rl-item">
+                            <div class="hovereffect">
+                                <img src="/images/afc-vol1-thumb.jpg" alt="The Apostolate's Family Catechism, Volume 1">
+                                <div class="overlay">
+                                    <h2>The Apostolate's Family Catechism, Volume 1</h2>
+                                    @can('download-pdf')
+                                        <a href="{{ route('download', '16431595-5175-44CE-A8A1-3F9A416A6BCC') }}" class="info">Download</a>
+                                    @else
+                                        <a href="{{ route('login') }}" class="info">Login to Download</a>
+                                    @endcan
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rl-item">
+                            <div class="hovereffect">
+                                <img src="/images/afc-vol2-thumb.jpg" alt="The Apostolate's Family Catechism, Volume 2">
+                                <div class="overlay">
+                                    <h2>The Apostolate's Family Catechism, Volume 2</h2>
+                                    @can('download-pdf')
+                                        <a href="{{ route('download', '9C3ABD70-56BA-40AB-BF9E-EA78A71977EA') }}" class="info">Download</a>
+                                    @else
+                                        <a href="{{ route('login') }}" class="info">Login to Download</a>
+                                    @endcan
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rl-item">
+                            <div class="hovereffect">
+                                <img src="/images/ccc-thumb.jpg" alt="Catechism of the Catholic Church">
+                                <div class="overlay">
+                                    <h2>Catechism of the Catholic Church</h2>
+                                    <a href="http://ccc.usccb.org/flipbooks/catechism/index.html" target="_blank" class="info">Read</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rl-item">
+                            <div class="hovereffect">
+                                <img src="/images/compendium-thumb.jpg" alt="Compendium of the Catechism of the Catholic Church"><br/>
+                                <div class="overlay">
+                                    <h2>Compendium of the Catechism of the Catholic Church</h2>
+                                    <a href="https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html" target="_blank" class="info">Read</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="tab-pane fade show active" id="search" role="tabpanel" aria-labelledby="search-tab">
