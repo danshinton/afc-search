@@ -1,7 +1,37 @@
     @extends('layouts.app')
 
     @section('content')
-        <div class="s130">
+        <ul class="nav nav-tabs justify-content-center" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="search-tab" data-toggle="tab" href="#search" role="tab" aria-controls="search" aria-selected="true">Search</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="resources-tab" data-toggle="tab" href="#resources" role="tab" aria-controls="resources" aria-selected="false">Resources</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade" id="resources" role="tabpanel" aria-labelledby="resources-tab">
+                <div>
+                    <img src="/images/afc-vol1-thumb.jpg" alt="The Apostolate's Family Catechism, Volume 1">The Apostolate's Family Catechism, Volume 1
+                    @can('download-pdf')
+                        (<a href="{{ route('download', '16431595-5175-44CE-A8A1-3F9A416A6BCC') }}">Download</a>)
+                    @endcan
+                </div>
+                <div>
+                    <img src="/images/afc-vol2-thumb.jpg" alt="The Apostolate's Family Catechism, Volume 2">The Apostolate's Family Catechism, Volume 2
+                    @can('download-pdf')
+                        (<a href="{{ route('download', '9C3ABD70-56BA-40AB-BF9E-EA78A71977EA') }}">Download</a>)
+                    @endcan
+                </div>
+                <div>
+                    <img src="/images/ccc-thumb.jpg" alt="Catechism of the Catholic Church">Catechism of the Catholic Church (<a href="http://ccc.usccb.org/flipbooks/catechism/index.html" target="_blank">Link</a>)
+                </div>
+                <div>
+                    <img src="/images/compendium-thumb.jpg" alt="Compendium of the Catechism of the Catholic Church">Compendium of the Catechism of the Catholic Church (<a href="https://www.vatican.va/archive/compendium_ccc/documents/archive_2005_compendium-ccc_en.html" target="_blank">Link</a>)
+                </div>
+            </div>
+            <div class="tab-pane fade show active" id="search" role="tabpanel" aria-labelledby="search-tab">
+                <div class="s130">
             <form action="{{ route('question.query') }}" method="POST">
                 @csrf
                 <div style="text-align: center; padding-bottom: 20px">
@@ -59,6 +89,7 @@
             </form>
 
         </div>
+            </div>
 
         <script src="js/extention/choices.js"></script>
     @endsection

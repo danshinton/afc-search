@@ -53,15 +53,9 @@ the console, use `docker-compose up -d`. Stop the app with a `CTRL+C` or `docker
 
 ## TODO
 This is a hobby app so there are a few things I would like to add:
-* Add links to the PDF versions of the AFC
-  * Switch between search and the page with the links using
-    [Bootstrap tabs or pills](https://getbootstrap.com/docs/4.0/components/navs/) 
-  * Add user authorization to download PDF
-    * Add page for admin to disable account
-    * Add role to registration form 
-    * `npm run dev` is now required to compile SASS
-  * If not authorized, then display the link to purchase
-  * Also create a link to the CCC on the USCCB website
+* Show larger covers on mouseover for resources
+* `npm run dev` is now required to compile SASS
+* Add page for admin to disable account
 * Change docker build to not include 'require-dev' dependencies
 * Add "Copy to Clipboard" feature to copy search results
 * See if we can make seeding faster by eliminating the double query for Question
