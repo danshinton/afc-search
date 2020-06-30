@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 Route::post('/', 'QuestionController@query')->name('question.query');
 
-Auth::routes();
+Auth::routes(['reset' => false]);
 
 Route::get('/download/{id}', 'DownloadController@download')->name('download');
+Route::get('/users', 'UserController@index')->name('users.index');

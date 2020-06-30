@@ -15,7 +15,8 @@ class UserSeeder extends Seeder
                 'password' => Hash::make('password'),
                 'created_at' => $now,
                 'updated_at' => $now,
-                'role' => 'admin'
+                'role' => 'admin',
+                'enabled' => true
             ]);
         }
     }

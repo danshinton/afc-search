@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
             $table->enum('role', ['admin', 'user'])->default('user');
+            $table->boolean('enabled')->default(false);
         });
     }
 

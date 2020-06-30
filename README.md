@@ -53,8 +53,10 @@ the console, use `docker-compose up -d`. Stop the app with a `CTRL+C` or `docker
 
 ## TODO
 This is a hobby app so there are a few things I would like to add:
-* `npm run dev` is now required to compile SASS
+* `npm run dev` or `npm run production` is now required to compile SASS
 * Add page for admin to disable account
+  * Figure out how to customize login failure message so disabled accounts display the proper message
+  * Add action to user table to toggle enabled on an account
 * Change docker build to not include 'require-dev' dependencies
 * Add "Copy to Clipboard" feature to copy search results
 * See if we can make seeding faster by eliminating the double query for Question
@@ -64,3 +66,5 @@ This is a hobby app so there are a few things I would like to add:
 * Take a look at how a Laravel app gets deployed in production. There may be some steps I need to do to remove dev
 dependencies.
 * Figure out how to cache dependencies so `npm install` and `compose update` don't have to download from the internet
+* Figure out mail hosting and enable forgot password and verify email
+* Look into adding [DataTables](https://www.datatables.net/manual/installation)
