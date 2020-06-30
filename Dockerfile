@@ -28,7 +28,8 @@ WORKDIR "/var/www/html"
 RUN cp .env.example .env && \
     echo "DB_DATABASE=$(pwd)/database/database.sqlite" >> .env && \
     npm install && \
-    composer update && \
+    npm run production && \
+    composer update --no-dev && \
     touch database/database.sqlite && \
     php artisan migrate && \
     php artisan db:seed && \

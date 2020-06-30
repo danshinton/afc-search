@@ -14,9 +14,10 @@ This application uses the Laravel framework, so it can be run a number of ways.
    Note: The `DB_DATABASE` must be set to the fully qualified path to the `database.sqlite` in order
    for `migrate`, `db:seed`, and `serve` to work.  
 
-1. Install application libraries
+1. Install application libraries and compile
    ```shell script
    npm install
+   npm run dev
    composer update
    ```
 
@@ -53,8 +54,6 @@ the console, use `docker-compose up -d`. Stop the app with a `CTRL+C` or `docker
 
 ## TODO
 This is a hobby app so there are a few things I would like to add:
-* `npm run dev` or `npm run production` is now required to compile SASS
-* Change docker build to not include 'require-dev' dependencies
 * Add "Copy to Clipboard" feature to copy search results
 * See if we can make seeding faster by eliminating the double query for Question
 * Add automated testing
