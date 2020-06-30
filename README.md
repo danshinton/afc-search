@@ -53,7 +53,6 @@ the console, use `docker-compose up -d`. Stop the app with a `CTRL+C` or `docker
 
 ## TODO
 This is a hobby app so there are a few things I would like to add:
-* Show larger covers on mouseover for resources
 * `npm run dev` is now required to compile SASS
 * Add page for admin to disable account
 * Change docker build to not include 'require-dev' dependencies

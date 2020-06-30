@@ -43,7 +43,7 @@
                             <div class="hovereffect">
                                 <img src="/images/ccc-thumb.jpg" alt="Catechism of the Catholic Church">
                                 <div class="overlay">
-                                    <h2>Catechism of the Catholic Church</h2>
+                                    <h2>Catechism of the Catholic Church, Second Edition</h2>
                                     <a href="http://ccc.usccb.org/flipbooks/catechism/index.html" target="_blank" class="info">Read</a>
                                 </div>
                             </div>
