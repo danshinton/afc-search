@@ -41,4 +41,9 @@ class User extends Authenticatable
     {
         return $this->role == 'admin';
     }
+
+    public function isEnabled()
+    {
+        return $this->enabled;
+    }
 }

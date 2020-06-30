@@ -4,8 +4,10 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
+use App\User;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
+use Illuminate\Validation\ValidationException;
 
 class LoginController extends Controller
 {
@@ -39,19 +41,24 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
-    /**
-     * Attempt to log the user into the application.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return bool
-     */
-    protected function attemptLogin(Request $request)
+    protected function credentials(Request $request)
     {
-        $email = request('email');
-        $password = request('password');
+        $credentials = $request->only($this->username(), 'password');
+        $credentials['enabled'] = 1;
 
-        return $this->guard()->attempt(
-            ['email' => $email, 'password' => $password, 'enabled' => 1], $request->filled('remember')
-        );
+        return $credentials;
+    }
+
+    protected function sendFailedLoginResponse(Request $request)
+    {
+        $errors = [$this->username() => [trans('auth.failed')]];
+
+        $user = User::where($this->username(), $request->{$this->username()})->first();
+
+        if ($user && !$user->isEnabled()) {
+            $errors = [$this->username() => 'This account is not enabled. Please contact support.'];
+        }
+
+        throw ValidationException::withMessages($errors);
     }
 }

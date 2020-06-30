@@ -22,4 +22,7 @@ Route::post('/', 'QuestionController@query')->name('question.query');
 Auth::routes(['reset' => false]);
 
 Route::get('/download/{id}', 'DownloadController@download')->name('download');
+
 Route::get('/users', 'UserController@index')->name('users.index');
+Route::patch('/users/disable/{id}', 'UserController@disable')->name('users.disable');
+Route::patch('/users/enable/{id}', 'UserController@enable')->name('users.enable');
