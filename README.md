@@ -54,13 +54,15 @@ the console, use `docker-compose up -d`. Stop the app with a `CTRL+C` or `docker
 
 ## TODO
 This is a hobby app so there are a few things I would like to add:
+* Figure out how to debug Laravel app in PhpStorm and document it in the README
+* Create list of suggested CCC topics that launch a search when clicked
 * Add "Copy to Clipboard" feature to copy search results
+* Look into adding [DataTables](https://www.datatables.net/manual/installation)
 * See if we can make seeding faster by eliminating the double query for Question
 * Add automated testing
 * Migrate to a VUE frontend so that the search does not reload the page
-* Create list of suggested CCC topics that launch a search when clicked
 * Take a look at how a Laravel app gets deployed in production. There may be some steps I need to do to remove dev
 dependencies.
 * Figure out how to cache dependencies so `npm install` and `compose update` don't have to download from the internet
 * Figure out mail hosting and enable forgot password and verify email
-* Look into adding [DataTables](https://www.datatables.net/manual/installation)
+
