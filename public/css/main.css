@@ -899,7 +899,7 @@ button {
       flex-grow: 1;
 }
 
-.s130 form .inner-form .input-field.first-wrap .svg-wrapper {
+.s130 form .inner-form .input-field.first-wrap .icon-wrapper {
   min-width: 80px;
   display: -ms-flexbox;
   display: flex;
@@ -1104,4 +1104,30 @@ button {
 .navbar-logo {
     height: 30px;
     margin-top: -0.5em;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #a8dadc inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.btn-copy {
+    background: #457b9d;
+    color:#fff;
+    border-radius: 34px;
+    padding: 10px 15px;
+    margin-bottom: 0.25rem;
+}
+
+.btn-copy:hover {
+    background: #009451;
+    color:#fff;
 }
