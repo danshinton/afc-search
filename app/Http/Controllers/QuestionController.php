@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Net\Shinton\CatechismParser;
 use App\Net\Shinton\SearchResult;
 use App\Question;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 class QuestionController extends Controller
 {

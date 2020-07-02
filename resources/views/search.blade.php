@@ -78,16 +78,23 @@
                             <input class="btn-search" type="submit" value="SEARCH">
                         </div>
                     </div>
-                    <span class="info">ex. 512,517-518</span>
-                    <div style="padding: 15px; line-height: 1.6em">
+                    <span class="info">ex. 512,517-518</span><span class="float-right info mr-4"><a data-toggle="collapse" href="#suggested-searches" role="button" aria-expanded="false" class="flat"><i id="sugg-arrow" class="fas fa-caret-right nav-arrow"></i> Suggested Topics</a></span>
+                        <div class="collapse mt-2 ml-4" id="suggested-searches" style="width: 95%">
+                            <div class="card card-body">
+                                Hello
+                            </div>
+                        </div>
+                    </div>
+                    <div class="results">
                         @isset($results)
+                            <h2>Results for query "{{ $results->query }}"</h2>
+                            <hr/>
                             @if($results->total != 0)
                                 <div class="float-right text-center">
-                                    <button type="button" onclick="copyToClipboard()" class="btn btn-copy"><i class="fas fa-copy"></i> Copy to Clipboard</button><br/>
+                                    <button id="copy-button" type="button" class="btn btn-copy"><i class="fas fa-copy"></i> Copy to Clipboard</button><br/>
                                     <span id="copy-result" style="display: none">Copied!</span>
                                 </div>
                             @endif
-                            <h2>Results for query "{{ $results->query }}"</h2>
                             <h3 style="margin-top: -0.3em; font-style: italic">
                                 @if($results->total == 0)
                                     No results found
@@ -125,6 +132,21 @@
 
 @section('scripts')
     <script type="application/javascript">
+        window.onload = function () {
+            $(document).ready(function() {
+                $('#copy-button').click(function() {
+                    copyToClipboard();
+                });
+
+                $('#suggested-searches').on('hide.bs.collapse', function() {
+                    $('#sugg-arrow').toggleClass('down');
+
+                }).on('show.bs.collapse', function() {
+                    $('#sugg-arrow').toggleClass('down');
+                });
+            });
+        }
+
         function copyToClipboard() {
             let text;
 

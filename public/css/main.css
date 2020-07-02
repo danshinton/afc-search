@@ -1131,3 +1131,28 @@ select:-webkit-autofill:focus {
     background: #009451;
     color:#fff;
 }
+
+.nav-arrow {
+    -moz-transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.nav-arrow.down {
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+a.flat:hover{
+    text-decoration: none;
+    color: #009451;
+}
+
+div.results {
+    padding: 15px;
+    line-height: 1.6em;
+    margin-top: 2em;
+
+}

@@ -113,9 +113,31 @@ For more details, please see the [JetBrains Help article](https://www.jetbrains.
 
 Now you should be able to set breakpoints in PhpStorm!
 
+## Debugging SQL
+
+If you want to know what SQL is being executed by Eloquent, add the following code in the method
+making the call, just above the SQL query:
+
+```php
+DB::listen(function($sql) {
+    Log::info($sql->sql);
+    Log::info($sql->bindings);
+    Log::info($sql->time);
+});
+```
+
+Don't forget the imports:
+
+```php
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
+```
+
+This will log SQL queries to `storage/logs/laravel.log`.
+
 ## TODO
 This is a hobby app so there are a few things I would like to add:
-* Create list of suggested CCC topics that launch a search when clicked
+* Create list of suggested CCC topics that launch a search when clicked 
 * Look into adding [DataTables](https://www.datatables.net/manual/installation)
 * See if we can make seeding faster by eliminating the double query for Question
 * Add automated testing
