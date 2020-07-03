@@ -3,7 +3,7 @@ This app takes a list of paragraphs from the Catechism of the Catholic Church (C
 questions in the Apostolate's Family Catechism (AFC).
 
 ## Running the app
-This application uses the Laravel framework, so it can be run a number of ways.
+This application uses the Laravel v7.17 framework, so it can be run a number of ways.
 
 ### From the command line:
 1. Set up the environment
@@ -137,9 +137,10 @@ This will log SQL queries to `storage/logs/laravel.log`.
 
 ## TODO
 This is a hobby app so there are a few things I would like to add:
+* Add submit validation so an empty search cannot be submitted
 * Look into adding [DataTables](https://www.datatables.net/manual/installation)
 * See if we can make seeding faster by eliminating the double query for Question
-* Add automated testing
+* Add [automated testing](https://laravel.com/docs/7.x/testing)
 * Migrate to a VUE frontend so that the search does not reload the page
 * Take a look at how a Laravel app gets deployed in production. There may be some steps I need to do to remove dev
 dependencies.
