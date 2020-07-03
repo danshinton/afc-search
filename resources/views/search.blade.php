@@ -62,7 +62,7 @@
         </div>
         <div class="tab-pane fade show active" id="search" role="tabpanel" aria-labelledby="search-tab">
             <div class="s130">
-                <form action="{{ route('question.query') }}" method="POST">
+                <form id="search-form" action="{{ route('question.query') }}" method="POST">
                     @csrf
                     <div style="text-align: center; padding-bottom: 20px">
                         <h1>Apostolate's Family Catechism Lookup</h1>
@@ -72,22 +72,66 @@
                             <div class="icon-wrapper">
                                 <i class="fas fa-search fa-2x"></i>
                             </div>
-                            <input id="search" type="text" placeholder="Enter your CCC paragraph numbers here" name="paragraphs"/>
+                            <input id="paragraphs" type="text" placeholder="Enter your CCC paragraph numbers here" name="paragraphs"/>
                         </div>
                         <div class="input-field second-wrap">
                             <input class="btn-search" type="submit" value="SEARCH">
                         </div>
                     </div>
                     <span class="info">ex. 512,517-518</span><span class="float-right info mr-4"><a data-toggle="collapse" href="#suggested-searches" role="button" aria-expanded="false" class="flat"><i id="sugg-arrow" class="fas fa-caret-right nav-arrow"></i> Suggested Topics</a></span>
-                        <div class="collapse mt-2 ml-4" id="suggested-searches" style="width: 95%">
-                            <div class="card card-body">
-                                Hello
+                    <div class="collapse mt-2 ml-4" id="suggested-searches" style="width: 95%">
+                        <div class="card card-body">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-2 p-0">
+                                        <ul class="sugg-list">
+                                            <li><a href="#" class="sugg-topic flat" data-paragraphs="359,375,399,404,518,635,655,766,1263,2361">Adam & Eve</a></li>
+                                            <li><a href="#" class="sugg-topic flat" data-paragraphs="1424,1449,1459,1483">Absolution</a></li>
+                                            <li><a href="#" class="sugg-topic flat" data-paragraphs="347,448,528,1078,1083,2628">Adoration</a></li>
+                                            <li><a href="#" class="sugg-topic flat" data-paragraphs="163,1028,1032,1045,1274,2090,2548,2550">Beatific Vision</a></li>
+                                            <li><a href="#" class="sugg-topic flat" data-paragraphs="735,826,864,953,1814,1818,1822-1829,1849,1889,2010,2090">Charity</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                        <ul class="sugg-list">
+                                            <li><a href="#" class="sugg-topic flat" data-paragraphs="1061-1065,2098,2560-2562,2564,2592,2664,2684,2725,2745,2786-2788">Christian Prayer</a></li>
+                                            <li><a href="#" class="sugg-topic flat" data-paragraphs="37,55-58,399,402-409,418">Consequences of Original Sin</a></li>
+                                            <li><a href="#" class="sugg-topic flat" data-paragraphs="53,122,708,1145,1950">Divine Pedagogy</a></li>
+                                            <li><a href="#" class="sugg-topic flat" data-paragraphs="242,252-254,267,685,689">Divine Persons of the Trinity</a></li>
+                                            <li><a href="#" class="sugg-topic flat" data-paragraphs="768,798-801,1830">Gifts of the Holy Spirit</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3 pl-0">
+                                        <ul class="sugg-list">
+                                            <li><a href="#" class="sugg-topic flat" data-paragraphs="461-463,479,483">Incarnation</a></li>
+                                            <li><a href="#" class="sugg-topic flat" data-paragraphs="422-682">Jesus Christ</a></li>
+                                            <li><a href="#" class="sugg-topic flat" data-paragraphs="2482-2486,2505,1753,2151">Lying</a></li>
+                                            <li><a href="#" class="sugg-topic flat" data-paragraphs="356-361,705,1701-1709">Man as the Image of God</a></li>
+                                            <li><a href="#" class="sugg-topic flat" data-paragraphs="773,829,963-973">Mary and the Church</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-3">
+                                        <ul class="sugg-list">
+                                            <li><a href="#" class="sugg-topic flat" data-paragraphs="1601-1666">Matrimony</a></li>
+                                            <li><a href="#" class="sugg-topic flat" data-paragraphs="1855-1864,1867,1874">Mortal Sin</a></li>
+                                            <li><a href="#" class="sugg-topic flat" data-paragraphs="1032,1430,1460">Penance</a></li>
+                                            <li><a href="#" class="sugg-topic flat" data-paragraphs="695,1212-1419,1229-1233,1285,1322,1420">Sacraments of Initiation</a></li>
+                                            <li><a href="#" class="sugg-topic flat" data-paragraphs="1928-1948">Social Justice</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="results">
                         @isset($results)
-                            <h2>Results for query "{{ $results->query }}"</h2>
+                            <h2>Results for query
+                                @if($results->name)
+                                    "{{ $results->name }}" <i class="fas fa-info-circle info-icon" data-toggle="tooltip" data-placement="top" title="CCC {{ $results->query }}"></i>
+                                @else
+                                    "{{ $results->query }}"
+                                @endif
+                            </h2>
                             <hr/>
                             @if($results->total != 0)
                                 <div class="float-right text-center">
@@ -124,6 +168,7 @@
                             @endif
                         @endisset
                     </div>
+                    <input id="search-name" type="hidden" name="name"/>
                 </form>
             </div>
         </div>
@@ -144,6 +189,12 @@
                 }).on('show.bs.collapse', function() {
                     $('#sugg-arrow').toggleClass('down');
                 });
+
+                $('.sugg-topic').click(function() {
+                    search($(this).text(), $(this).data("paragraphs"));
+                })
+
+                $('[data-toggle="tooltip"]').tooltip()
             });
         }
 
@@ -172,6 +223,12 @@
             });
 
             return text;
+        }
+
+        function search(name, paragraphs) {
+            $('#search-name').val(name);
+            $('#paragraphs').val(paragraphs);
+            $('#search-form').submit();
         }
     </script>
 @endsection

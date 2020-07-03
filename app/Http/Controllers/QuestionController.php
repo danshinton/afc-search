@@ -18,6 +18,7 @@ class QuestionController extends Controller
 
     public function query() {
         $query = request('paragraphs');
+        $name = request('name');
         $paragraphs = $this->catechismParser->parseParagraphs($query);
 
         // Find the best fit questions
@@ -31,7 +32,7 @@ class QuestionController extends Controller
         })->get();
 
         // Return the result
-        $result = new SearchResult($query, $bestFit, $related);
+        $result = new SearchResult($query, $bestFit, $related, $name);
 
         return view('search', [
             'results' => $result

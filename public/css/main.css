@@ -1154,5 +1154,14 @@ div.results {
     padding: 15px;
     line-height: 1.6em;
     margin-top: 2em;
+}
 
+.sugg-list {
+    padding-inline-start: 20px;
+    margin-bottom: 0;
+}
+
+.info-icon {
+    vertical-align: super;
+    font-size: 0.5em;
 }
