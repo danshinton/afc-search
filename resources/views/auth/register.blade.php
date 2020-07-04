@@ -5,7 +5,9 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Create User') }}</div>
+                <div class="card-header">
+                    {{ __('Create User') }}
+                </div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
@@ -77,6 +79,9 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Create User') }}
                                 </button>
+                                <a class="btn btn-danger" href="{{ route('users.index') }}">
+                                    Cancel
+                                </a>
                             </div>
                         </div>
                     </form>

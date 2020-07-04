@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="text-center">
-        <div style="width: 100%; max-width: 990px; display: inline-block;">
+        <div style="width: 100%; max-width: 990px; display: inline-block; text-align: left">
             @if(session()->has('mesg'))
                 @if(session('mesg-type') == 'error')
                     <div class="alert alert-danger text-left" role="alert">
@@ -14,9 +14,15 @@
                     </div>
                 @endif
             @endif
-            <h1>Users</h1>
-            <div class="float-right"><a href="{{ route('register') }}"><i class="fas fa-user-plus"></i></a></div>
-            <table class="table table-striped">
+
+            <h1 class="text-center">
+                Users
+                <div class="float-right">
+                    <a href="{{ route('register') }}"><i class="fas fa-user-plus" style="font-size: 0.5em" data-toggle="tooltip" data-placement="top" title="Add User"></i></a>
+                </div>
+            </h1>
+
+            <table id="user-table" class="table table-striped table-bordered">
                 <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -64,4 +70,15 @@
             </table>
         </div>
     </div>
+@endsection
+
+@section('scripts')
+    <script type="application/javascript">
+        window.onload = function () {
+            $(document).ready(function() {
+                $('#user-table').DataTable();
+                $('[data-toggle="tooltip"]').tooltip()
+            });
+        }
+    </script>
 @endsection
