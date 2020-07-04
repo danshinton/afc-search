@@ -61,7 +61,7 @@
             </div>
         </div>
         <div class="tab-pane fade show active" id="search" role="tabpanel" aria-labelledby="search-tab">
-            <div class="s130">
+           <div class="s130">
                 <form id="search-form" action="{{ route('question.query') }}" method="POST">
                     @csrf
                     <div style="text-align: center; padding-bottom: 20px">
@@ -75,10 +75,11 @@
                             <input id="paragraphs" type="text" placeholder="Enter your CCC paragraph numbers here" name="paragraphs"/>
                         </div>
                         <div class="input-field second-wrap">
-                            <input class="btn-search" type="submit" value="SEARCH">
+                            <input id="search-button" class="btn-search" type="submit" value="SEARCH" disabled="disabled">
                         </div>
                     </div>
-                    <span class="info">ex. 512,517-518</span><span class="float-right info mr-4"><a data-toggle="collapse" href="#suggested-searches" role="button" aria-expanded="false" class="flat"><i id="sugg-arrow" class="fas fa-caret-right nav-arrow"></i> Suggested Topics</a></span>
+                    <span class="info">ex. 512,517-518</span>
+                    <span class="float-right info mr-4"><a data-toggle="collapse" href="#suggested-searches" role="button" aria-expanded="false" class="flat"><i id="sugg-arrow" class="fas fa-caret-right nav-arrow"></i> Suggested Topics</a></span>
                     <div class="collapse mt-2 ml-4" id="suggested-searches" style="width: 95%">
                         <div class="card card-body">
                             <div class="container">
@@ -195,6 +196,14 @@
                 })
 
                 $('[data-toggle="tooltip"]').tooltip()
+
+                $('#paragraphs').on('keyup', function() {
+                    if ($(this).val().length == 0) {
+                        $('#search-button').attr('disabled', 'disabled');
+                    } else {
+                        $('#search-button').attr('disabled', false);
+                    }
+                });
             });
         }
 

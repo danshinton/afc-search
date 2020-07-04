@@ -137,7 +137,6 @@ This will log SQL queries to `storage/logs/laravel.log`.
 
 ## TODO
 This is a hobby app so there are a few things I would like to add:
-* Add submit validation so an empty search cannot be submitted
 * Look into adding [DataTables](https://www.datatables.net/manual/installation)
 * See if we can make seeding faster by eliminating the double query for Question
 * Add [automated testing](https://laravel.com/docs/7.x/testing)
