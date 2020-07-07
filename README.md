@@ -137,12 +137,13 @@ This will log SQL queries to `storage/logs/laravel.log`.
 
 ## TODO
 This is a hobby app so there are a few things I would like to add:
-* Add [automated testing](https://laravel.com/docs/7.x/testing)
+* Add [testing](https://laravel.com/docs/7.x/testing) for search
 * Migrate to a VUE frontend so that the search does not reload the page
 * Take a look at how a Laravel app gets deployed in production.
 * Figure out how to cache dependencies so `npm install` and `compose update` don't have to download from the internet
 * Deploy to web 
   * Heroku has a free tier, can run PHP in a dyno, and will support custom domain
   * SendGrid has a free plan and Heroku has a free Add-On for it
+  * Investigate DigitalOcean
   
 

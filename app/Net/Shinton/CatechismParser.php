@@ -17,15 +17,24 @@ class CatechismParser
                         throw new ParseException('Range not formatted correctly: ' . $paragraph);
                     }
 
-                    $start = intval($range[0]);
-                    $end = intval($range[1]);
+                    $range[0] = trim($range[0]);
+                    $range[1] = trim($range[1]);
 
-                    for ($i = $start; $i <= $end; $i++) {
-                        $paragraphs[] = $i;
+                    if (is_numeric($range[0]) && is_numeric($range[1])) {
+                        $start = intval($range[0]);
+                        $end = intval($range[1]);
+
+                        for ($i = $start; $i <= $end; $i++) {
+                            $paragraphs[] = $i;
+                        }
                     }
 
                 } else {
-                    $paragraphs[] = intval(trim($paragraph));
+                    $paragraph = trim($paragraph);
+
+                    if (is_numeric($paragraph)) {
+                        $paragraphs[] = intval($paragraph);
+                    }
                 }
             }
         }
