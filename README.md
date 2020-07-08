@@ -135,8 +135,28 @@ use Illuminate\Support\Facades\Log;
 
 This will log SQL queries to `storage/logs/laravel.log`.
 
+## Deploying to Heroku
+
+1. In not installed already, install the Heroku CLI and authenticate
+   ```shell script
+   brew tap heroku/brew && brew install heroku
+   heroku login
+   heroku buildpacks:add heroku/nodejs -a afc-search
+   ```
+
+
+
+1. Push code to `heroku` branch
+   ```shell script
+   TBD
+   ```
+   
+   This will automatically trigger an update to the dyno
+
+
 ## TODO
 This is a hobby app so there are a few things I would like to add:
+* Add ability to change your own password
 * Add [testing](https://laravel.com/docs/7.x/testing) for search
 * Migrate to a VUE frontend so that the search does not reload the page
 * Take a look at how a Laravel app gets deployed in production.
