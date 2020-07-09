@@ -202,8 +202,9 @@ push to the `heroku` git branch. Also, I am assuming that you have created a [Se
    This will automatically trigger Heroku to build and deploy the new dyno.
 
 1. Initialize the database
-   Check to see if the app is done deploying by going to app webpage, monitoring the deploy log on the dashboard,
-   or using the `heroku ps` command. Once the dyno is deployed, do the following:
+   Check to see if the app is done deploying by going to app webpage, monitoring the deploy log on the activity
+   tab of the dashboard, or using the `heroku releases` to see if the new release is deployed. Once the dyno
+   is deployed, do the following:
    
    ```shell script
    heroku run bash
