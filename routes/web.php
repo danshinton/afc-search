@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::post('/', 'QuestionController@query')->name('question.query');
 
-Auth::routes(['reset' => false]);
+Auth::routes();
 
 Route::get('/download/{id}', 'DownloadController@download')->name('download');
 

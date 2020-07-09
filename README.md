@@ -137,22 +137,79 @@ This will log SQL queries to `storage/logs/laravel.log`.
 
 ## Deploying to Heroku
 
-1. In not installed already, install the Heroku CLI and authenticate
+### Initial setup
+
+This only has to be done once to install the app on Heroku. For these examples, I am assuming that you
+have already created a new Hobby Dyno on Heroku called `afc-search` which is configured to auto-build when you
+push to the `heroku` branch. 
+
+1. Install the Heroku CLI and authenticate
    ```shell script
    brew tap heroku/brew && brew install heroku
    heroku login
-   heroku buildpacks:add heroku/nodejs -a afc-search
    ```
 
-
-
-1. Push code to `heroku` branch
+1. Tell the Heroku CLI which app to use
    ```shell script
-   TBD
+   export HEROKU_APP=afc-search
    ```
-   
-   This will automatically trigger an update to the dyno
 
+1. Install the build packs
+   ```shell script
+   heroku buildpacks:add heroku/nodejs
+   heroku buildpacks:add heroku/php
+   ```
+   This will run the `npm` and `php composer` commands to build the app
+
+1. Install PostgreSQL
+   ```shell script
+   heroku addons:create heroku-postgresql:hobby-dev
+   ```
+   PostgreSQL is used because Heroku does not support sqlite. Take note of the database URL it gives you.
+
+1. Configure dyno environment 
+   ```shell script
+   heroku config:set APP_ENV=production
+   heroku config:set DATABASE_URL=<The Database URL from above>
+   ```
+
+1. Configure domain
+   
+   Assuming we want to expose our app as `afc.shinton.net`:
+   ```shell script
+   heroku domains:add afc.shinton.net 
+   ```
+   Take note of the DNS target it produces. On the `shinton.net` domain, add a new CNAME for `afc` with that target.
+
+1. Push what is on `master` to the `heroku` branch
+   ```shell script
+   git pull
+   git checkout heroku
+   git rebase origin/master
+   git push
+   ```
+   This will automatically trigger Heroku to build and deploy the new dyno.
+
+1. Initialize the database
+   ```shell script
+   heroku run bash
+   php artisan migrate
+   php artisan db:seed
+   exit
+   ```
+
+The application should be up and available at [https://afc.shinton.net](https://afc.shinton.net).
+
+### Deploying App Updates
+
+1. Push what is on `master` to the `heroku` branch
+   ```shell script
+   git pull
+   git checkout heroku
+   git rebase origin/master
+   git push
+   ```
+   This will automatically trigger Heroku to build and deploy the new dyno.
 
 ## TODO
 This is a hobby app so there are a few things I would like to add:
