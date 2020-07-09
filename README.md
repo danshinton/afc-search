@@ -139,11 +139,11 @@ This will log SQL queries to `storage/logs/laravel.log`.
 
 ### Initial setup
 
-This only has to be done once to install the app on Heroku. For these examples, I am assuming that you
+This only has to be done once to install the app on [Heroku](https://www.heroku.com/). For these examples, I am assuming that you
 have already created a new Hobby Dyno on Heroku called `afc-search` which is configured to auto-build when you
-push to the `heroku` branch. 
+push to the `heroku` git branch. Also, I am assuming that you have created a [SendGrid](https://sendgrid.com/) account.
 
-1. Install the Heroku CLI and authenticate
+1. Install the [Heroku CLI](https://devcenter.heroku.com/categories/command-line) and authenticate
    ```shell script
    brew tap heroku/brew && brew install heroku
    heroku login
@@ -167,19 +167,30 @@ push to the `heroku` branch.
    ```
    PostgreSQL is used because Heroku does not support sqlite. Take note of the database URL it gives you.
 
+1. Configure SendGrid
+   * Create [an API Key](https://app.sendgrid.com/settings/api_keys) for the `afc-search` application
+   * Review the Laravel variables in the `.env.production` file to ensure they match
+     [SendGrid's recommendations](https://sendgrid.com/docs/for-developers/sending-email/laravel/)
+     * Note: If you need to override variables in the `.env.production` file (e.g. `MAIL_FROM_ADDRESS`), you
+       don't need to edit that file. Just use `config:set` commands in the next step.
+   * Make sure you have [verified the email address](https://sendgrid.com/docs/ui/sending-email/sender-verification)
+     you will be using for the `MAIL_FROM_ADDRESS`. 
+
 1. Configure dyno environment 
    ```shell script
    heroku config:set APP_ENV=production
    heroku config:set DATABASE_URL=<The Database URL from above>
+   heroku config:set MAIL_PASSWORD=<The SendGrid API Key created above>
    ```
-
+   
 1. Configure domain
    
    Assuming we want to expose our app as `afc.shinton.net`:
    ```shell script
    heroku domains:add afc.shinton.net 
    ```
-   Take note of the DNS target it produces. On the `shinton.net` domain, add a new CNAME for `afc` with that target.
+   Take note of the DNS target it produces. On the `shinton.net` domain, add a new `CNAME` record for `afc`
+   with that target.
 
 1. Push what is on `master` to the `heroku` branch
    ```shell script
@@ -191,6 +202,9 @@ push to the `heroku` branch.
    This will automatically trigger Heroku to build and deploy the new dyno.
 
 1. Initialize the database
+   Check to see if the app is done deploying by going to app webpage, monitoring the deploy log on the dashboard,
+   or using the `heroku ps` command. Once the dyno is deployed, do the following:
+   
    ```shell script
    heroku run bash
    php artisan migrate
@@ -213,13 +227,9 @@ The application should be up and available at [https://afc.shinton.net](https://
 
 ## TODO
 This is a hobby app so there are a few things I would like to add:
-* Add ability to change your own password
+* Add ability to change your own password without using "forgot password"
+* Fix download links so they redirect unauthenticated users to login and then redirect to download after auth
+* Get application logging working on heroku
 * Add [testing](https://laravel.com/docs/7.x/testing) for search
 * Migrate to a VUE frontend so that the search does not reload the page
-* Take a look at how a Laravel app gets deployed in production.
 * Figure out how to cache dependencies so `npm install` and `compose update` don't have to download from the internet
-* Deploy to web 
-  * SendGrid has a free plan and Heroku has a free Add-On for it
-  * Get logging working on heroku
-  
-
