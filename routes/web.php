@@ -22,8 +22,8 @@ Route::post('/', 'QuestionController@query')->name('question.query');
 
 Auth::routes();
 
-Route::get('/password/change', 'Auth\ResetPasswordController@change')->name('password.change')->middleware('auth');
-Route::post('/password/change', 'Auth\ResetPasswordController@store')->name('password.store')->middleware('auth');
+//Route::get('/password/change', 'Auth\ResetPasswordController@change')->name('password.change')->middleware('auth');
+//Route::post('/password/change', 'Auth\ResetPasswordController@store')->name('password.store')->middleware('auth');
 
 Route::get('/download/{id}', 'DownloadController@download')->name('download')->middleware('auth');
 
