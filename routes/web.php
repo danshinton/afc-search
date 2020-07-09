@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,7 +22,10 @@ Route::post('/', 'QuestionController@query')->name('question.query');
 
 Auth::routes();
 
-Route::get('/download/{id}', 'DownloadController@download')->name('download');
+Route::get('/password/change', 'Auth\ResetPasswordController@change')->name('password.change')->middleware('auth');
+Route::post('/password/change', 'Auth\ResetPasswordController@store')->name('password.store')->middleware('auth');
+
+Route::get('/download/{id}', 'DownloadController@download')->name('download')->middleware('auth');
 
 Route::get('/users', 'UserController@index')->name('users.index');
 Route::patch('/users/disable/{id}', 'UserController@disable')->name('users.disable');

@@ -47,19 +47,21 @@
                                 No
                             @endif
                         </td>
-                        <td>
-                            @if(Auth::id() != $user->id)
+                        <td class="text-center">
+                            @if(Auth::id() == $user->id)
+                                <a href="{{ route('password.change') }}" class="btn btn-primary  w-75" role="button">Change Password</a>
+                            @else
                                 @if($user->enabled)
                                     <form action="{{ route('users.disable', $user->id) }}" method="POST">
                                         @csrf
                                         @method('PATCH')
-                                        <button type="submit" class="form-control">Disable</button>
+                                        <button type="submit" class="btn btn-danger w-75">Disable</button>
                                     </form>
                                 @else
                                     <form action="{{ route('users.enable', $user->id) }}" method="POST">
                                         @csrf
                                         @method('PATCH')
-                                        <button type="submit" class="form-control">Enable</button>
+                                        <button type="submit" class="btn btn-success w-75">Enable</button>
                                     </form>
                                 @endif
                             @endif

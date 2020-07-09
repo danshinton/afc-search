@@ -179,6 +179,7 @@ push to the `heroku` git branch. Also, I am assuming that you have created a [Se
 1. Configure dyno environment 
    ```shell script
    heroku config:set APP_ENV=production
+   heroku config:set LOG_CHANNEL=stderr
    heroku config:set DATABASE_URL=<The Database URL from above>
    heroku config:set MAIL_PASSWORD=<The SendGrid API Key created above>
    ```
@@ -226,11 +227,19 @@ The application should be up and available at [https://afc.shinton.net](https://
    ```
    This will automatically trigger Heroku to build and deploy the new dyno.
 
+### Useful Heroku CLI commands
+If you don't have the `HEROKU_APP` environment variable set, then you will have to use the `-a <appname>` paramater
+for all the Heroku CLI calls.
+
+| Command                   | Description                 |
+|---------------------------|-----------------------------|
+| `heroku dyno:restart web` | Restart web app             |
+| `heroku run bash`         | Get a shell on the app dyno |
+| `heroku logs`             | View app logs               |
+
 ## TODO
 This is a hobby app so there are a few things I would like to add:
-* Add ability to change your own password without using "forgot password"
-* Fix download links so they redirect unauthenticated users to login and then redirect to download after auth
-* Get application logging working on heroku
+* Create a downloading landing page with a link back to the main interface
 * Add [testing](https://laravel.com/docs/7.x/testing) for search
 * Migrate to a VUE frontend so that the search does not reload the page
 * Figure out how to cache dependencies so `npm install` and `compose update` don't have to download from the internet
