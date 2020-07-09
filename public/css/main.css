@@ -980,7 +980,7 @@ button {
 }
 
 .rl {
-    width: 990px;
+    max-width: 990px;
     display: inline-block
 }
 
