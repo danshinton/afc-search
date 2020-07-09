@@ -226,6 +226,7 @@ The application should be up and available at [https://afc.shinton.net](https://
    ```
    This will automatically trigger Heroku to build and deploy the new dyno.
 
+
 ### Useful Heroku CLI commands
 If you don't have the `HEROKU_APP` environment variable set, then you will have to use the `-a <appname>` paramater
 for all the Heroku CLI calls.
@@ -238,6 +239,7 @@ for all the Heroku CLI calls.
 
 ## TODO
 This is a hobby app so there are a few things I would like to add:
+* Study up on apache rewrite rule syntax
 * Create a downloading landing page with a link back to the main interface
 * Add [testing](https://laravel.com/docs/7.x/testing) for search
 * Migrate to a VUE frontend so that the search does not reload the page
