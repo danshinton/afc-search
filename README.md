@@ -237,6 +237,45 @@ for all the Heroku CLI calls.
 | `heroku run bash`         | Get a shell on the app dyno |
 | `heroku logs`             | View app logs               |
 
+## Testing on phone simulators
+
+### iOS
+1. If not installed already, install [Xcode](https://developer.apple.com/xcode/)
+
+1. Install `ios-sim` and list the available devices:
+
+   ```shell script
+   npm install -g ios-sim
+   ios-sim showdevicetypes
+   ```
+   If you need to install additional devices run the `Simulator` app that comes with Xcode.
+   
+1. Assuming you have a device called `iPhone-XR, 13.1`, launch it using:
+   ```shell script
+   ios-sim start --devicetypeid "iPhone-XR, 13.1"
+   ```
+
+You should be able to view the webapp on a browser on the simulated device by going to http://127.0.0.1:8000.
+
+### Android
+1. If not installed already, install [Android Studio](https://developer.android.com/studio/install.html)
+ 
+2. Once installed, you should be able to launch the `emulator` command from the Android SDK. On my system, the
+   emulator command was at `~/Library/Android/sdk/emulator/emulator`. List the available AVDs using:
+   ```shell script
+   emulator -list-avds
+   ```
+
+   If you don't have any AVDs installed, you can create one using the AVD Manager in Android Studio.
+   
+3. Assuming you have an AVD called `Pixel_3_API_30`, you can launch it with:
+
+   ```shell script
+   emulator -avd Pixel_3_API_30
+   ```
+
+You should be able to view the webapp on a browser on the simulated device by going to http://10.0.2.2:8000.
+
 ## TODO
 This is a hobby app so there are a few things I would like to add:
 * Study up on apache rewrite rule syntax
