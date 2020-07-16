@@ -278,8 +278,7 @@ You should be able to view the webapp on a browser on the simulated device by go
 
 ## TODO
 This is a hobby app so there are a few things I would like to add:
-* Study up on apache rewrite rule syntax
-* Create a downloading landing page with a link back to the main interface
+* Study up on [Apache rewrite rule syntax](https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html)
 * Add [testing](https://laravel.com/docs/7.x/testing) for search
 * Migrate to a VUE frontend so that the search does not reload the page
 * Figure out how to cache dependencies so `npm install` and `compose update` don't have to download from the internet

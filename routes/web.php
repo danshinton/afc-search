@@ -25,7 +25,8 @@ Auth::routes();
 Route::get('/password/change', 'Auth\ResetPasswordController@change')->name('password.change')->middleware('auth');
 Route::post('/password/change', 'Auth\ResetPasswordController@store')->name('password.store')->middleware('auth');
 
-Route::get('/download/{id}', 'DownloadController@download')->name('download')->middleware('auth');
+Route::get('/download/{id}', 'DownloadController@index')->name('download')->middleware('auth');
+Route::get('/download/file/{id}', 'DownloadController@download')->name('download.file')->middleware('auth');
 
 Route::get('/users', 'UserController@index')->name('users.index');
 Route::patch('/users/disable/{id}', 'UserController@disable')->name('users.disable');

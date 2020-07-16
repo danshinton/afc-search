@@ -18,11 +18,7 @@
                             <img src="/images/afc-vol1-thumb.jpg" alt="The Apostolate's Family Catechism, Volume 1">
                             <div class="overlay">
                                 <h2>The Apostolate's Family Catechism, Volume 1</h2>
-                                @can('download-pdf')
-                                    <a href="{{ route('download', '16431595-5175-44CE-A8A1-3F9A416A6BCC') }}" class="info">Download PDF</a>
-                                @else
-                                    <a href="{{ route('login') }}" class="info">Login to Read</a>
-                                @endcan
+                                <a href="{{ route('download', '16431595-5175-44CE-A8A1-3F9A416A6BCC') }}" class="info">Download PDF</a>
                             </div>
                         </div>
                     </div>
@@ -31,11 +27,7 @@
                             <img src="/images/afc-vol2-thumb.jpg" alt="The Apostolate's Family Catechism, Volume 2">
                             <div class="overlay">
                                 <h2>The Apostolate's Family Catechism, Volume 2</h2>
-                                @can('download-pdf')
-                                    <a href="{{ route('download', '9C3ABD70-56BA-40AB-BF9E-EA78A71977EA') }}" class="info">Download PDF</a>
-                                @else
-                                    <a href="{{ route('login') }}" class="info">Login to Read</a>
-                                @endcan
+                                <a href="{{ route('download', '9C3ABD70-56BA-40AB-BF9E-EA78A71977EA') }}" class="info">Download PDF</a>
                             </div>
                         </div>
                     </div>

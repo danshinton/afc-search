@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class DownloadController extends Controller
 {
+    public function index($id) {
+        return view('download', [
+            'fileid' => $id
+        ]);
+    }
+
     public function download($id) {
         if ($id == '16431595-5175-44CE-A8A1-3F9A416A6BCC') {
             if (Gate::allows('download-pdf')) {
